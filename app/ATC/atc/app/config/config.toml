@@ -1,0 +1,15 @@
+[lifespan]
+lifespan = 10
+wait = 5
+
+[routers]
+routers = ["cvx", "run", "shutdown", "request", "headers"]
+
+[test]
+test_args = "None == Non None"
+resr_arg_2 = "[Hello, world!]"
+test_args3 = "HTML, CSS, JavaScript"
+test_args4 = "client is java"
+test_args5 = "Nones"
+test_args6 = "Hi, Alice"
+test_args7 = "Man"

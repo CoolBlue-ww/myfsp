@@ -1,0 +1,5 @@
+[lifespan]
+lifespan = 50
+wait = 100
+sleep = 0.25
+headers = {}

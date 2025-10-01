@@ -1,0 +1,36 @@
+requests
+numpy
+pandas
+playwright
+selenium
+jieba
+fastapi
+matplotlib
+selenium
+aiohttp
+aiofile
+aiofiles
+PyQt6
+scrapy
+lxml
+bs4
+ipython
+fake-useragent
+flask
+mitmproxy
+uvicorn
+redis
+jsonpath
+deepmerge
+python-multipart
+aiopath
+anyio
+httpx
+httpx[http2]
+curl_cffi
+tomli
+tomli-w
+tomlkit
+watchdog
+# aioinotify
+# aiowatchdog
