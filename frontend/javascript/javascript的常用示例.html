@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #my_time {
+            display: flex;
+            justify-content: center;
+            color: #ec181e;
+            font-size: 25vw;
+            font-weight: 900;
+            text-shadow: 0 6px 4px rgba(255, 100, 100, 0.6);
+        }
+    </style>
+</head>
+<body>
+<h1 id="myh1">我是一个标题</h1>
+<button type="button" onclick="myFunc()">点击我，看标题变身</button>
+<hr>
+<h2>点击下面的按钮切换图片</h2>
+<img src="./20250811154527630111_s.png" alt="picture">
+<br>
+<button type="button" onclick="myFunc2()">点我刷新图片</button>
+<hr>
+<h2 id="demo_chart">我是一段无趣但是有用的Demo文字</h2>
+<button type="button" onclick="myFunc3()">点击我，给文字换个颜色</button>
+<hr>
+<div style="font-size:50px;">你好呀！我在这</div>
+<button type="button" onclick="myFunc4()">点击我，让Hello消失</button>
+<button type="button" onclick="myFunc5()">点击我，让Hello回来</button>
+<hr>
+<button type="button" onclick="myFunc6()">点击我，打开弹窗警告</button>
+<hr>
+<div id="my_time">00:00:00</div>
+<script>
+    // 修改HTML的内容
+    function myFunc() {
+        document.getElementById("myh1").innerHTML = "我是一个酷酷的标题！"
+    }
+    // 修改HTML元素的属性
+    function myFunc2() {
+        const img = document.querySelector("img");
+        img.src = "./20250813110151406719_s.png"
+    }
+    // 修改HTML的样式
+    function myFunc3() {
+        const demo_h2 = document.getElementById("demo_chart");
+        demo_h2.style.color = "red";
+    }
+    // 隐藏HTML元素
+    function myFunc4() {
+        const div = document.querySelector("div");
+        div.style.display = "none";
+    }
+    // 显示HTML元素
+    function myFunc5() {
+        const div = document.querySelector("div");
+        div.style.display = "block";
+    }
+    // 创建警报弹出窗口
+    function myFunc6() {
+        alert("已成功弹窗！")
+    }
+    // 将事件处理程序附加到文档
+    document.addEventListener("click", myFunc7);
+    function myFunc7() {
+        document.body.style.backgroundColor = "coral";
+    }
+    const intervalID = setInterval(startTimer, 1000);
+    function startTimer() {
+        var date = new Date();
+        var my_timer = document.getElementById("my_time");
+        my_timer.innerHTML = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    }
+
+</script>
+</body>
+</html>
