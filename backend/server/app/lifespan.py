@@ -36,7 +36,7 @@ async def app_lifespan(
                 json=request_body,
                 headers=headers,
             )
-            response.raise_for_status
+            response.raise_for_status()
             return response.json()
     else:
         pass  # Always running

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        document.write("<p>这是document.write的内容</p>")
+    </script>
+</head>
+<body>
+    <p id="demo1">张三</p>
+    <p id="demo2">李四</p>
+    <p id="demo3">王五</p>
+    <p id="demo4">赵六</p>
+    <hr>
+    <button type="button" onclick="myFunc()">点我</button>
+<!--    通过alert警告弹窗输出-->
+    <button type="button" onclick="alert('警告弹窗也是js中的一种输出方式')">点我看弹窗</button>
+    <script>
+        // 通过innerHTML来插入
+        document.getElementById("demo1").innerHTML = "我是张三";
+        // 使用write方法直接写入内容
+        function myFunc() {
+            document.write("页面加载完成之后document.write会覆盖之前的内容")
+        }
+        console.log('这是输出到控制台的内容')
+    </script>
+</body>
+</html>
